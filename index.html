@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Consultant Page</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/devchallenges.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Lora:ital,wght@0,400;0,500;1,400;1,600;1,700&family=Montserrat:ital,wght@0,200;0,400;1,200;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-text">
+                <h1>this interior</h1>
+            </div>
+            <div class="mobile-nav" id="mobile-nav">
+                <nav class="navigation">
+                    <a href="" class="nav-item">Home</a>
+                    <a href="" class="nav-item decoration">Collection</a>
+                    <a href="" class="nav-item decoration">About</a>
+                    <a href="" class="nav-item decoration">Contact</a>
+                </nav>
+            </div>
+            <!-- <i class="fa fa-reorder"></i> -->
+            <button class="hamburger-button" id="hamburger-button" onclick="toggleNavigation()">
+                <div class="hamburger-button_bar"></div>
+                <div class="hamburger-button_bar"></div>
+                <div class="hamburger-button_bar"></div>
+            </button>
+            <div class="nav" id="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Collection</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+            </div>
+        </header>
+
+        <main>
+            <div class="container-2">
+                <div class="main-text">
+                    <h1 class="headline">Modern Interior</h1>
+                    <p class="description">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+                    <button class="read">Read more  <i class="fa fa-space-shuttle"></i></button>
+                </div>
+                <div class="main-images">
+                    <div class="image-1">
+                        <img src="images/photo1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="box-head">
+                    <div class="figure">
+                        <img src="images/photo2.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Aliza Webber </h3>
+                        <span class="spn">Interior Designer</span>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <h1>Designed in 2020 by Aliza Webber</h1>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>created by <span style="font-weight: bolder; text-decoration: underline;">Bluebberies</span> - devchallenges.io</p>
+        </footer>
+        
+    </div>
+
+    <script>
+        const toggle = (elementId) => {
+        const element = document.getElementById(elementId);
+
+            if (element.classList.contains(elementId + "--open")) {
+                element.classList.remove(elementId + "--open")
+            } else {
+                element.classList.add(elementId + "--open")
+            }
+        }
+
+        const toggleNavigation = () => {
+        toggle("mobile-nav");
+        toggle("hamburger-button");
+        }
+    </script>
+</body>
+</html>
